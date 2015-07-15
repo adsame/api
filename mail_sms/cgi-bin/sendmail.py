@@ -14,14 +14,14 @@ class Mail(object):
     #    self.usr = args.user
     #    self.pwd = args.password
     
-    def __init__(self,body,dict):
-        self.server = dict['server']
-        self.to = dict['to']
-        self.fr = dict['fr']
-        self.sub = dict['subject']
+    def __init__(self,body,args):
+        self.server = args['server']
+        self.to = args['to']
+        self.fr = args['fr']
+        self.sub = args['subject']
         self.body = body
-        self.usr = dict['user']
-        self.pwd = dict['password']
+        self.usr = args['user']
+        self.pwd = args['password']
     
 
            
